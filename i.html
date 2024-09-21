@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            min-height: 100vh;
+            /*background-color: #0c192c;*/
+         transition: background-color 1s ease;
+            
+            
+            }
+           .container22{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+           }
+
+           .bubble{
+          
+          
+            z-index: -100;
+            position: relative;
+            display: flex;
+           }
+           .bubble span{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background-color: aqua;
+            margin: 0 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px #4fc3dc44,0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+            animation:animate 15s linear infinite ;
+             animation-duration: calc(120s/var(--i));
+           }
+           .bubble span:nth-child(even){
+
+  background-color: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+           }
+           @keyframes animate{
+            0%{
+                transform: translateY(100vh) scale(0);
+            }
+            100%{
+                transform: translateY(-10vh) scale(1);
+            }
+           }
+
+
+
+           /*                         */
+
+           
+        
+         
+        /*img{
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+           
+        }*/
+        #logo{
+            display: flex;
+            justify-content: left;
+          background-image: url('C:\\Users\\HP\\Desktop\\buildit.png');
+          background-size: cover;
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+           
+        }
+        .container{
+            height: 300px;
+            width: 500px;
+            padding: 10px;
+            margin: 90px auto;
+           /* border: 1px solid black;
+            background-color: #c1c1c1;
+           background-color: neon;
+           --neon: #9461fd;
+           --neon-glow: #4003e6;*/
+            border-radius: 30px;
+            box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff40;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+        
+           
+        }
+        
+        .container{
+            display: flex;
+            justify-items: center; 
+        }
+        p{
+            font-size: x-large;
+        }
+        #Build-Resume-bt{
+            height: 60px;
+            width: 120px;
+            padding: 10px;
+           
+            /*border: 1px solid black;*/
+            border: none;
+            background-color: #3498db;
+           border-radius: 30px;
+            box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff40;
+           
+        }
+        #Build-Resume-bt:hover{
+            background-color: #68b3e4;
+            transition: 0.5s;
+        }
+        
+        #Build-Resume-bt:focus{
+            outline-color: transparent;
+            outline-style: solid;
+            
+            box-shadow: 0 0 0 0;
+            transition: 0.4ms;
+        }
+        #Build-Resume-bt:active{
+         box-shadow: 20px 20px 60px rgba(144, 126, 126, 0.255);
+         background-color: #3498db;
+         /*transition: 0.1s; */  
+        }
+        #Sign-in{
+            margin-right: 100px;
+            height: 60px;
+            width: 120px;
+            padding: 10px;
+           
+            /*border: 1px solid black;*/
+            border: none;
+            background-color: #3498db;
+           border-radius: 30px;
+            box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff40;
+           
+        }
+        #Sign-in:hover{
+            background-color: #68b3e4;
+            transition: 0.5s;
+        }
+        
+        #Sign-in:focus{
+            outline-color: transparent;
+            outline-style: solid;
+            
+            box-shadow: 0 0 0 0;
+            transition: 0.4ms;
+        }
+        #Sign-in:active{
+         box-shadow: 20px 20px 60px rgba(144, 126, 126, 0.255);
+         background-color: #3498db;
+         /*transition: 0.1s; */  
+        }
+        
+        #Sign-up{
+           /* margin-left: 250px;*/
+            
+            height: 60px;
+            width: 120px;
+            padding: 10px;
+           
+            /*border: 1px solid black;*/
+            border: none;
+            background-color: #3498db;
+           border-radius: 30px;
+            box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff40;
+           
+        }
+        #Sign-up:hover{
+            background-color: #68b3e4;
+            transition: 0.5s;
+        }
+        
+        #Sign-up:focus{
+            outline-color: transparent;
+            outline-style: solid;
+            
+            box-shadow: 0 0 0 0;
+            transition: 0.4ms;
+        }
+        #Sign-up:active{
+         box-shadow: 20px 20px 60px rgba(144, 126, 126, 0.255);
+         background-color: #3498db;
+         /*transition: 0.1s; */  
+        }
+
+        
+         
+        
+
+    </style>
+</head>
+<body id="b">
+    <div class="container22">
+
+        
+        <div class="bubble">
+<span style="--i:11;"></span>        
+<span style="--i:12;"></span>
+<span style="--i:24;"></span>
+<span style="--i:10;"></span>
+<span style="--i:14;"></span>
+<span style="--i:23;"></span>
+<span style="--i:18;"></span>
+
+<span style="--i:16;"></span>
+<span style="--i:19;"></span>
+<span style="--i:20;"></span>
+<span style="--i:22;"></span>
+<span style="--i:25;"></span>
+<span style="--i:18;"></span>
+
+<span style="--i:21;"></span>
+<span style="--i:15;"></span>
+<span style="--i:13;"></span>
+<span style="--i:26;"></span>
+<span style="--i:17;"></span>
+<span style="--i:13;"></span>
+
+<span style="--i:28;"></span>
+
+<span style="--i:21;"></span>
+<span style="--i:15;"></span>
+<span style="--i:13;"></span>
+<span style="--i:26;"></span>
+<span style="--i:17;"></span>
+<span style="--i:13;"></span>
+<span style="--i:21;"></span>
+<span style="--i:15;"></span>
+<span style="--i:13;"></span>
+<span style="--i:26;"></span>
+<span style="--i:17;"></span>
+<span style="--i:13;"></span>
+
+<span style="--i:11;"></span>        
+<span style="--i:12;"></span>
+<span style="--i:24;"></span>
+<span style="--i:10;"></span>
+<span style="--i:14;"></span>
+<span style="--i:23;"></span>
+<span style="--i:18;"></span>
+
+        </div>
+        <button id="logo">
+        
+            <!--<img src=
+                alt="" id="h">-->
+       </button>
+           
+   
+       
+       <div class="container">
+   
+          <p> Wanna Build a Resume?</p><br>
+          <button type="button" id="Build-Resume-bt" >Build Resume</button><br>
+   <div>
+          <button type="button" id="Sign-in" >Sign In</button>
+          <button type="button" id="Sign-up">Sign up</button>
+        </div>  
+        
+       </div>
+       <!--<script src="project.js"></script>-->
+       <script>
+        
+        document.getElementById("Build-Resume-bt").onclick = function () {
+            location.href = "overlay2.html";
+        };
+        
+        document.getElementById("Sign-up").onclick = function () {
+            location.href = "register.php";
+        };
+
+        document.getElementById("Sign-in").onclick = function () {
+            location.href = "Signin.php";
+        };
+        
+        function getRandomGradient() {
+            const angle = Math.floor(Math.random() * 360);
+            const color1 = getRandomColor();
+            const color2 = getRandomColor();
+            return `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+          }
+        
+          // Function to generate a random hex color
+          function getRandomColor() {
+            return '#' + Math.floor(Math.random() * 16777215).toString(16);
+          }
+        
+          // Function to continuously change background gradient
+          function changeBackgroundGradient() {
+            let x = Math.random() * 4000 + 1000;
+            console.log(x);
+            document.body.style.background = getRandomGradient();
+         
+            setTimeout(changeBackgroundGradient, x); // Change gradient every second
+          }
+        
+          // Initial call to start the continuous gradient change
+          changeBackgroundGradient();
+       </script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </div>
+
+</body>
+</html>

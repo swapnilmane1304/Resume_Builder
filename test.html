@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*
+      
+        body {
+           
+            background: rgba(20, 40, 40, .8);
+            transition: .2s;
+              
+            font-family: 'Arial', sans-serif;
+            /*background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            /*background: linear-gradient(90deg ,orange,#9b59b6);
+            background-color: #725ac1;
+            background: #123;
+            
+
+        }
+        
+
+        form{
+            
+                width: 100%;
+                padding: 30px 0;
+                
+        }
+              
+        
+
+        
+        .Container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          
+            
+        }
+        
+        #fullname_dsp{
+            border: none;
+        }
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .child1,
+        .child2,
+        .child3
+        .child4{
+            display: grid;
+            gap: 10px;
+        }
+        
+        h1 {
+            text-align: center;
+            color:white;
+            font-weight: 300;
+         
+         
+        }
+        .Container2 {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+          
+        }
+        
+        
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            
+        }
+        
+        input {
+           /* width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+            margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: black;
+  outline: none;
+        }
+        
+        
+        .Container3 {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        
+        }
+        
+        
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        
+        
+        
+        
+        .preview-cnt{
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 32% auto;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            overflow: hidden;
+        }
+        
+        .preview-cnt-l{
+            padding: 3rem 3rem 2rem 3rem;
+        }
+        .preview-cnt-r{
+            padding: 3rem 3rem 3rem 4rem;
+        }
+        .preview-cnt-l .preview-blk:nth-child(1){
+            text-align: center;
+        }
+        .preview-image{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .preview-image img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .preview-item-name{
+            font-size: 2.4rem;
+            font-weight: 600;
+            margin: 1.8rem 0;
+            position: relative;
+        }
+        .preview-item-name::after{
+            position: absolute;
+            content: "";
+            bottom: -10px;
+            width: 50px;
+            height: 1.5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .preview-blk{
+            padding: 1rem 0;
+            
+        }
+        .preview-blk-title h3{
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+            padding-bottom: 0.5rem;
+        }
+        .preview-blk-title{
+            margin-bottom: 1rem;
+        }
+        .preview-blk-list .preview-item{
+            font-size: 1.5rem;
+            margin-bottom: 0.2rem;
+            opacity: 0.95;
+        }
+        .preview-cnt-r .preview-blk-title{
+            color: var(--clr-dark);
+        }
+        .preview-cnt-r .preview-blk-list .preview-item{
+            margin-top: 1.8rem;
+        }
+        
+        .achievements-items.preview-blk-list .preview-item span:first-child,
+        .educations-items.preview-blk-list .preview-item span:first-child,
+        .experiences-items.preview-blk-list .preview-item span:first-child{
+            display: block;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+        
+        .educations-items.preview-blk-list .preview-item span:nth-child(2),
+        .experiences-items.preview-blk-list .preview-item span:nth-child(2){
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+        
+        .educations-items.preview-blk-list .preview-item span:nth-child(3),
+        .experiences-items.preview-blk-list .preview-item span:nth-child(3){
+            font-style: italic;
+            margin-right: 1rem;
+        }
+        
+        .educations-items.preview-blk-list .preview-item span:nth-child(4),
+        .educations-items.preview-blk-list .preview-item span:nth-child(5),
+        .experiences-items.preview-blk-list .preview-item span:nth-child(4),
+        .experiences-items.preview-blk-list .preview-item span:nth-child(5){
+            margin-right: 1rem;
+            background-color: var(--clr-green);
+            color: var(--clr-white);
+            padding: 0 1rem;
+            border-radius: 0.6rem;
+        }
+        
+        .educations-items.preview-blk-list .preview-item span:nth-child(6),
+        .experiences-items.preview-blk-list .preview-item span:nth-child(6){
+            font-size: 13.5px;
+            display: block;
+            opacity: 0.8;
+            margin-top: 1rem;
+        }
+        .projects-items.preview-blk-list .preview-item span{
+            display: block;
+        }
+        
+        @media screen and (min-width: 768px){
+            .cols-3{
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 2rem;
+            }
+            .cols-2{
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 2rem;
+            }
+        }
+        
+        @media screen and (min-width: 992px){
+            .cv-form-row{
+                padding: 3rem 3rem 0rem 3rem;
+            }
+            .cols-3{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        .print-btn-sc{
+            margin: 2rem 0 6rem 0;
+        }
+        
+        /* print section 
+        @media print{
+            @page{
+                size: A4 landscape;
+            }
+            body *{
+                visibility: hidden;
+            }
+        
+            #non_print_area{
+                display: none;
+            }
+            #non_print_area1{
+                display: none;
+            }
+            #non_print_area2{
+                display: none;
+            }
+            #non_print_area3{
+                display: none;
+            }
+            #non_print_area4{
+                display: none;
+            }
+            #non_print_area5{
+                display: none;
+            }
+            .print_area *{
+                visibility: visible;
+            }
+        
+            .print_area{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                left: 0;
+                top: 0;
+                overflow: hidden;
+            }
+        }*/
+
+        html {
+            --s: 100px; /* control the size */
+            --c1: #C3CCAF;
+            --c2: #67434F;
+            
+            --_s: calc(2*var(--s)) calc(2*var(--s));
+            --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+            --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+            background:
+              calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),
+              calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+              calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),
+              calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+              conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+               0 0/var(--s) var(--s);
+            animation: m 3s infinite;
+          }
+          @keyframes m {
+            0% {
+             background-position: 
+              calc( .9*var(--s)) calc( .9*var(--s)),
+              calc(-.1*var(--s)) calc(-.1*var(--s)),
+              calc( .7*var(--s)) calc( .7*var(--s)),
+              calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+            }
+            25% {
+             background-position: 
+              calc(1.9*var(--s)) calc( .9*var(--s)),
+              calc(-1.1*var(--s)) calc(-.1*var(--s)),
+              calc(1.7*var(--s)) calc( .7*var(--s)),
+              calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+            }
+            50% {
+             background-position: 
+              calc(1.9*var(--s)) calc(-.1*var(--s)),
+              calc(-1.1*var(--s)) calc( .9*var(--s)),
+              calc(1.7*var(--s)) calc(-.3*var(--s)),
+              calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+            }
+            75% {
+             background-position: 
+              calc(2.9*var(--s)) calc(-.1*var(--s)),
+              calc(-2.1*var(--s)) calc( .9*var(--s)),
+              calc(2.7*var(--s)) calc(-.3*var(--s)),
+              calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+            }
+            100% {
+             background-position: 
+              calc(2.9*var(--s)) calc(-1.1*var(--s)),
+              calc(-2.1*var(--s)) calc(1.9*var(--s)),
+              calc(2.7*var(--s)) calc(-1.3*var(--s)),
+              calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+            }
+          }
+        
+
+    </style>
+</head>
+<body>
+    
+    <!--<form class="cv-form" id = "cv-form">
+        <h1>
+            Personal Details
+        </h1>
+        
+        <div class="Container" id="non_print_area">
+        
+            
+                <div class="child1">
+            <label for="Name">Name</label>
+            <input type="text" name="Name" id="Name" onkeyup="generateCV()">
+            <label for="Photo">Photo</label>
+            <input type="file" name="Photo" id="Photo" accept = "image/jpg,image/jpeg,image/png" onchange="displayImage(event)">
+            <label for="DOB">DOB</label>
+            <input type="date" name="DOB" id="DOB" onkeyup="generateCV()">
+    
+            <label for="Job Title">Job Title</label>
+            <input type="text" name="Job Title" id="Job Title" onkeyup="generateCV()">
+                </div>
+    
+                <div class="child2">
+                    <label for="Phone">Phone</label>
+                    <input type="tel" name="Phone" id="Phone" onkeyup="generateCV()">
+            
+                    <label for="Email">Email</label>
+                    <input type="Email" name="Email" id="Email" onkeyup="generateCV()">
+            
+                    <label for="Address">Address</label>
+                    <input type="text" name="Address" id="Adress" onkeyup="generateCV()">
+                        </div>
+                        <div class="child3">
+                            <label for="City">City</label>
+                            <input type="text" name="City" id="City" onkeyup="generateCV()">
+                    
+                            <label for="State">State</label>
+                            <input type="text" name="State" id="State" onkeyup="generateCV()">
+                    
+                            <label for="Country">Country</label>
+                            <input type="text" name="Country" id="Country" onkeyup="generateCV()">
+                            
+                            </div>
+           
+        
+    </div>
+    
+    <h1>
+        Professional Experience
+    </h1>
+    
+    <div class="Container2" id="non_print_area1">
+        
+            
+        <div class="child4">
+    <label for="Position_title">Position title</label>
+    <input type="text" name="Position_title" id="Position_title" onkeyup="generateCV()">
+    
+    <label for="Company_Name">Company Name</label>
+    <input type="text" name="Company_Name" id="Company_Name" onkeyup="generateCV()">
+    
+    <label for="Job_Start_Date">Start Date</label>
+    <input type="date" name="Job_Start_Date" id="Job_Start_Date" onkeyup="generateCV()">
+    
+    <label for="Job_End_Date">End Date</label>
+    <input type="date" name="Job_End_Date" id="Job_End_Date" onkeyup="generateCV()">
+    
+    <label for="Job_title">Job title</label>
+    <input type="text" name="Job_title" id="Job_title" onkeyup="generateCV()">
+        </div>
+    
+    </div>
+    
+    <h1>
+      Achievements
+    </h1>
+    
+    <div class="Container2" id="non_print_area2">
+        
+            
+        <div class="child4">
+    <label for="Achievements">Achievements</label>
+    <input type="text" name="Achievements" id="Achievements" onkeyup="generateCV()">
+    <label for="Achievement_date">Date</label>
+    <input type="date" name="" id="Achievement_date" onkeyup="generateCV()">
+    </div>
+    </div>
+    
+    <h1>
+        Projects
+      </h1>
+      
+      <div class="Container2" id="non_print_area3">
+          
+              
+          <div class="child4">
+      <label for="Project">Project Name</label>
+      <input type="text" name="Project" id="Project" onkeyup="generateCV()">
+      <label for="Project_link">Project Link</label>
+      <input type="text" name="Project_linl" id="Project_link" onkeyup="generateCV()">
+    
+      </div>
+      </div>
+        
+        <h1>
+            Education
+        </h1>
+        
+        <div class="Container3" id="non_print_area4">
+            
+                
+            <div class="child5">
+        <label for="School_Name">School Name</label>
+        <input type="text" name="School_Name" id="School_Name" onkeyup="generateCV()">
+        
+        <label for="School_Location">School Location</label>
+        <input type="text" name="School_Location" id="School_Location" onkeyup="generateCV()">
+        
+        <label for="Education_Start_Date">Start Date</label>
+        <input type="date" name="Education_Start_Date" id="Education_Start_Date" onkeyup="generateCV()">
+        
+        <label for="Education_End_Date">End Date</label>
+        <input type="date" name="Education_End_Date" id="Education_End_Date" onkeyup="generateCV()">
+        
+        <label for="Degree">Degree</label>
+        <input type="text" name="Degree" id="Degree" onkeyup="generateCV()">
+        <label for="skills">Skills</label>
+        <input type="text" name="Skills" id="Skills" onkeyup="generateCV()">
+        <label for="designation">designation</label>
+        <input type="text" name="designation" id="designation" onkeyup="generateCV()">
+    
+            </div>
+        </div>
+    <br>
+    
+    </form>
+    <div class="Container3">
+    <section id = "preview-sc" class = "print_area">
+        <div class = "container">
+            <div class = "preview-cnt">
+                <div class = "preview-cnt-l bg-green text-white">
+                    <div class = "preview-blk">
+                        <div class = "preview-image" id = "image_dsp">
+                            <img src = "" alt = "" id = "image_dspp"> 
+                        </div>
+                        <div class = "preview-item preview-item-name">
+                            <input type="text" id="fullname_dsp" readonly>
+                            
+                        </div>
+                        <div class = "preview-item">
+                            <input type="text" id="designation_dsp" style="border: none; word-wrap: break-word;"readonly >
+                        </div>
+                    </div>
+    
+                    <div class = "preview-blk">
+                        <div class = "preview-blk-title">
+                            <h3>about</h3>
+                        </div>
+                        <div class = "preview-blk-list">
+                            <div class = "preview-item">
+                                <input  id="phoneno_dsp" style="border: none;"readonly>
+                            </div>
+                            <div class = "preview-item">
+                                <input id = "email_dsp" style="border: none;"readonly>
+                            </div>
+                            <div class = "preview-item">
+                                <input id = "address_dsp" style="border: none;"readonly>
+                            </div>
+                            </div>
+                    </div>
+    
+                    <div class = "preview-blk">
+                        <div class = "preview-blk-title">
+                            <h3>skills</h3>
+                        </div>
+                        <div class = "skills-items preview-blk-list" id = "skills_dsp">
+                            <input id="skillss_dsp" style="border: none;"readonly>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class = "preview-cnt-r bg-white">
+                    <div class = "preview-blk">
+                        <div class = "preview-blk-title">
+                            <h3>Achievements</h3>
+                        </div>
+                        <div class = "achievements-items preview-blk-list" id = "achievements_dsp"></div>
+                        <input id="achievementss_dsp" style="border: none;"readonly>
+                    </div>
+    
+                    <div class = "preview-blk">
+                        <div class = "preview-blk-title">
+                            <h3>educations</h3>
+                        </div>
+                        <div class = "educations-items preview-blk-list" id = "educations_dsp"></div>
+                        <input id="educationss_dsp" style="border: none;"readonly>
+                    </div>
+    
+                    <div class = "preview-blk">
+                        <div class = "preview-blk-title">
+                            <h3>experiences</h3>
+                        </div>
+                        <div class = "experiences-items preview-blk-list" id = "experiences_dsp"></div>
+                        <input id="experiencess_dsp" style="border: none; "readonly>
+                    </div>
+    
+                    <div class = "preview-blk">
+                        <div class = "preview-blk-title">
+                            <h3>projects</h3>
+                        </div>
+                        <div class = "projects-items preview-blk-list" id = "projects_dsp"></div>
+                        <input id="projectss_dsp" style="border: none;"readonly> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class = "print-btn-sc">
+        <div class = "container">
+            <button type = "button" class = "print-btn btn btn-primary" onclick="printCV()">Print CV</button>
+           
+    </section>
+    </div>
+    
+    
+    <script src="s.js">
+</script>-->
+
+    </body>
+    </html>
